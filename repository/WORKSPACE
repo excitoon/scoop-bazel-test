@@ -1,0 +1,8 @@
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "new_git_repository")
+
+new_git_repository(
+    name = "this",
+    remote = "https://github.com/excitoon/scoop-bazel-test",
+    commit = "d6521242a73be15a44583fd793ce23795647afe1",
+    build_file_content = """exports_files(["README.md"])"""
+)
